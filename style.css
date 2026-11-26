@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline-color: rgb(0, 195, 255);
+}
+
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -52,11 +56,9 @@ main>form>.submit {
     padding: 1rem;
     border-radius: var(--input-border-radius);
     border: var(--input-border-size) solid black;
+    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-}
-
-.input:focus {
-    border-color: red;
 }
 
 main {
