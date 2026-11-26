@@ -26,13 +26,22 @@
 
             <label class="label" for="password">
                 Enter Password
-                <input class="input" type="password" id="password" name="password" placeholder="xxxxxxxx">
+                <div class="password-container">
+                    <input class="input" type="password" id="password" name="password" placeholder="xxxxxxxx"
+                        maxlength="8">
+                    <button class="eye-button" type="button"><img class="eye-icon" src="./assets/icons/eye.svg"
+                            alt=""></button>
+                </div>
             </label>
 
             <label class="label" for="confirm-password">
                 Confirm Password
-                <input class="input" type="password" id="confirm-password" name="confirm-password"
-                    placeholder="xxxxxxxx">
+                <div class="password-container">
+                    <input class="input" type="password" id="confirm-password" name="confirm-password"
+                        placeholder="xxxxxxxx" maxlength="8">
+                    <button class="eye-button" type="button"><img class="eye-icon" src="./assets/icons/eye.svg"
+                            alt=""></button>
+                </div>
             </label>
 
             <input class="submit" type="submit" value="Update Profile">

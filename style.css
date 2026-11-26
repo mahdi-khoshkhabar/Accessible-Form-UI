@@ -14,6 +14,11 @@ body {
     flex-direction: row;
 }
 
+.form {
+    --input-border-radius: 1rem;
+    --input-border-size: 2px;
+}
+
 .label,
 .input {
     display: block;
@@ -38,25 +43,48 @@ main>form>.submit {
     border-radius: 1rem;
 }
 
-main>form>label {
+.label {
     margin: var(--paddings) 0;
 }
 
-main>form>label>input {
+.input {
     margin: 0.5rem 0;
     padding: 1rem;
-    border-radius: 1rem;
-    border: 2px solid black;
+    border-radius: var(--input-border-radius);
+    border: var(--input-border-size) solid black;
+    text-overflow: ellipsis;
+}
+
+.input:focus {
+    border-color: red;
 }
 
 main {
     flex: 3;
-    border: 1px dashed gray;
     padding: var(--paddings);
 }
 
 aside {
     flex: 2;
-    border: 1px dashed gray;
     padding: var(--paddings);
+}
+
+.password-container {
+    position: relative;
+}
+
+.eye-icon {
+    width: 30px;
+}
+
+.eye-button {
+    position: absolute;
+    top: var(--input-border-size);
+    bottom: var(--input-border-size);
+    inset-inline-end: var(--input-border-size);
+    border-end-end-radius: var(--input-border-radius);
+    border-start-end-radius: var(--input-border-radius);
+    border: none;
+    padding: 0 0.5rem;
+    background-color: transparent;
 }
