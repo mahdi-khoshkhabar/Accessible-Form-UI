@@ -111,6 +111,7 @@ aside {
     font-size: 2rem;
     color: gray;
     background: conic-gradient(
+        from 180deg,
         black calc(var(--progress) * 1%),
         lightgray 0
     );
@@ -126,4 +127,10 @@ aside {
     background-color: white;
     border-radius: 50%;
     z-index: -1;
+}
+
+.progress-title {
+    font-weight: normal;
+    text-align: center;
+    margin-block-end: 2rem;
 }

@@ -17,12 +17,10 @@
                     required>
             </label>
 
-
             <label class="label" for="email">
                 Email
                 <input class="input" type="email" id="email" name="email" placeholder="e.g. name@example.com">
             </label>
-
 
             <label class="label" for="password">
                 Enter Password
@@ -48,8 +46,8 @@
         </form>
     </main>
     <aside>
-        <div id="progress-bar" class="progress-bar" data-value="65">65%</div>
-        <label for="progress-bar">Profile Completeness</label>
+        <div id="progress-bar" class="progress-bar" data-value="65" aria-labelledby="progress-title">65%</div>
+        <h2 id="progress-title" class="progress-title">Profile Completeness</h2>
 
         <section class="checklist">
             <ul>
